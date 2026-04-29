@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Link from "next/link";
-import UserMenu from "@/components/UserMenu";
+import Navbar from "@/components/Navbar";
 
 export const metadata: Metadata = {
   title: "SkillSetra | Freelance Marketplace Platform",
@@ -33,21 +33,7 @@ export default function RootLayout({
         />
       </head>
       <body>
-        <nav className="navbar">
-          <div className="container navbar-container">
-            <Link href="/" className="logo">
-              SkillSetra<span style={{ color: "var(--primary)" }}>.</span>
-            </Link>
-            <div className="nav-links">
-              <Link href="/about" className="sidebar-link" style={{ fontWeight: 500 }}>About Project</Link>
-              <Link href="/tasks" className="sidebar-link" style={{ fontWeight: 500 }}>Browse Tasks</Link>
-              <Link href="/freelancers" className="sidebar-link" style={{ fontWeight: 500 }}>Find Freelancers</Link>
-              <Link href="/client/dashboard" className="btn btn-outline" style={{ padding: "0.5rem 1rem", fontSize: "0.85rem" }}>Client Dashboard</Link>
-              <Link href="/freelancer/dashboard" className="btn btn-primary" style={{ padding: "0.5rem 1rem", fontSize: "0.85rem" }}>Freelancer Dashboard</Link>
-              <UserMenu />
-            </div>
-          </div>
-        </nav>
+        <Navbar />
         <main>
           {children}
         </main>

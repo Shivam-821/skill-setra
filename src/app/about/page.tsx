@@ -8,8 +8,8 @@ export default function AboutPage() {
         </p>
       </section>
 
-      <div className="flex gap-8 flex-wrap justify-center">
-        <div className="glass-card animate-fade-up delay-1" style={{ flex: "1 1 400px", maxWidth: "500px" }}>
+      <div className="flex gap-8 justify-center flex-wrap mobile-carousel">
+        <div className="glass-card animate-fade-up delay-1 mobile-carousel-item" style={{ flex: "1 1 400px", maxWidth: "500px" }}>
           <h2 style={{ borderBottom: "2px solid var(--primary)", paddingBottom: "1rem", marginBottom: "1.5rem" }}>Project Overview</h2>
           <p>
             This application is built as a comprehensive <strong>Database Management System (DBMS)</strong> project. 
@@ -27,7 +27,7 @@ export default function AboutPage() {
           </div>
         </div>
 
-        <div className="glass-card animate-fade-up delay-2" style={{ flex: "1 1 400px", maxWidth: "500px" }}>
+        <div className="glass-card animate-fade-up delay-2 mobile-carousel-item" style={{ flex: "1 1 400px", maxWidth: "500px" }}>
           <h2 style={{ borderBottom: "2px solid var(--secondary)", paddingBottom: "1rem", marginBottom: "1.5rem" }}>Development Team</h2>
           <p className="mb-6">
             This prototype and its underlying relational schema were designed and implemented by:

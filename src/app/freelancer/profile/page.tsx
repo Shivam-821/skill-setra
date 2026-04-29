@@ -25,9 +25,9 @@ export default async function FreelancerProfilePage() {
         </aside>
 
         <section className="dashboard-content animate-fade-in">
-          <div className="flex justify-between align-center mb-6">
+          <div className="flex justify-between align-center mb-6 flex-wrap gap-4">
             <h2 style={{ fontSize: "2rem", margin: 0 }}>My Profile</h2>
-            <button className="btn btn-primary" style={{ padding: "0.5rem 1rem" }}>Edit Profile</button>
+            <button className="btn btn-primary" style={{ padding: "0.5rem 1rem", width: "auto" }}>Edit Profile</button>
           </div>
 
           <div className="glass-card mb-8">
@@ -53,9 +53,9 @@ export default async function FreelancerProfilePage() {
           </div>
 
           <div className="glass-card mb-8">
-            <div className="flex justify-between align-center border-b mb-6" style={{ borderBottom: "1px solid var(--border)", paddingBottom: "1rem" }}>
+            <div className="flex justify-between align-center border-b mb-6 flex-wrap gap-4" style={{ borderBottom: "1px solid var(--border)", paddingBottom: "1rem" }}>
               <h3 style={{ margin: 0 }}>My Skills</h3>
-              <button className="btn btn-outline" style={{ padding: "0.3rem 0.8rem", fontSize: "0.8rem" }}>Add Skill</button>
+              <button className="btn btn-outline" style={{ padding: "0.3rem 0.8rem", fontSize: "0.8rem", width: "auto" }}>Add Skill</button>
             </div>
             
             <div className="table-container">
@@ -95,15 +95,15 @@ export default async function FreelancerProfilePage() {
           </div>
 
           <div className="glass-card">
-            <div className="flex justify-between align-center border-b mb-6" style={{ borderBottom: "1px solid var(--border)", paddingBottom: "1rem" }}>
+            <div className="flex justify-between align-center border-b mb-6 flex-wrap gap-4" style={{ borderBottom: "1px solid var(--border)", paddingBottom: "1rem" }}>
               <h3 style={{ margin: 0 }}>Portfolio</h3>
-              <button className="btn btn-outline" style={{ padding: "0.3rem 0.8rem", fontSize: "0.8rem" }}>Add Project</button>
+              <button className="btn btn-outline" style={{ padding: "0.3rem 0.8rem", fontSize: "0.8rem", width: "auto" }}>Add Project</button>
             </div>
             
             {freelancer.portfolios.length > 0 ? (
-              <div className="flex gap-4 flex-wrap">
+              <div className="flex gap-4 flex-wrap mobile-carousel">
                 {freelancer.portfolios.map(portfolio => (
-                  <div key={portfolio.id} style={{ padding: "1.5rem", border: "1px solid var(--border)", borderRadius: "4px", background: "rgba(255,255,255,0.02)", flex: "1 1 300px" }}>
+                  <div key={portfolio.id} className="mobile-carousel-item" style={{ padding: "1.5rem", border: "1px solid var(--border)", borderRadius: "4px", background: "rgba(255,255,255,0.02)", flex: "1 1 300px" }}>
                     <h4 style={{ marginBottom: "0.5rem" }}>{portfolio.title}</h4>
                     <p style={{ fontSize: "0.9rem", color: "var(--text-muted)" }}>{portfolio.description}</p>
                     {portfolio.projectLink && (

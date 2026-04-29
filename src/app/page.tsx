@@ -34,8 +34,8 @@ export default function Home() {
           <p style={{ maxWidth: "600px", margin: "0 auto" }}>An architectural overview of the core functionalities handled by our normalized relational database structure.</p>
         </div>
 
-        <div className="flex gap-8 justify-between flex-wrap">
-          <div className="glass-card" style={{ flex: "1 1 300px" }}>
+        <div className="flex gap-8 justify-between flex-wrap mobile-carousel">
+          <div className="glass-card mobile-carousel-item-small" style={{ flex: "1 1 300px" }}>
             <h3 style={{ fontSize: "1.5rem" }}>For Clients</h3>
             <p style={{ minHeight: "80px" }}>
               Organizations or individuals seeking specialized skills. Clients can register, post detailed project specifications, set budget constraints, and directly invite candidates based on algorithmic recommendations.
@@ -50,7 +50,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="glass-card" style={{ flex: "1 1 300px" }}>
+          <div className="glass-card mobile-carousel-item-small" style={{ flex: "1 1 300px" }}>
             <h3 style={{ fontSize: "1.5rem" }}>For Freelancers</h3>
             <p style={{ minHeight: "80px" }}>
               Skilled professionals looking for targeted opportunities. Freelancers maintain profiles highlighting their technical proficiencies, work experience, and detailed project portfolios to attract quality clients.
@@ -65,7 +65,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="glass-card" style={{ flex: "1 1 300px" }}>
+          <div className="glass-card mobile-carousel-item-small" style={{ flex: "1 1 300px" }}>
             <h3 style={{ fontSize: "1.5rem" }}>Matching Engine</h3>
             <p style={{ minHeight: "80px" }}>
               The core technical differentiator of SkillSetra. Utilizing advanced relational queries to dynamically map client requirements against freelancer proficiency vectors.

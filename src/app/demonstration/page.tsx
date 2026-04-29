@@ -22,24 +22,24 @@ export default async function DemonstrationPage() {
       {/* Database Statistics */}
       <div className="animate-fade-up mb-8">
         <h3 style={{ fontSize: "1.5rem", marginBottom: "1rem", color: "var(--text-main)", textAlign: "center" }}>Real-time Database Status</h3>
-        <div className="flex gap-4 flex-wrap justify-center mb-8">
-          <div className="glass-card text-center" style={{ padding: "1.5rem", minWidth: "150px" }}>
+        <div className="flex gap-4 flex-wrap justify-center mb-8 mobile-carousel">
+          <div className="glass-card text-center mobile-carousel-item-mini" style={{ padding: "1.5rem", minWidth: "150px" }}>
             <div style={{ fontSize: "2.5rem", fontFamily: "Playfair Display", color: "var(--primary)" }}>{userCount}</div>
             <div style={{ fontSize: "0.85rem", textTransform: "uppercase", letterSpacing: "1px", color: "var(--text-muted)" }}>Users</div>
           </div>
-          <div className="glass-card text-center" style={{ padding: "1.5rem", minWidth: "150px" }}>
+          <div className="glass-card text-center mobile-carousel-item-mini" style={{ padding: "1.5rem", minWidth: "150px" }}>
             <div style={{ fontSize: "2.5rem", fontFamily: "Playfair Display", color: "var(--accent)" }}>{taskCount}</div>
             <div style={{ fontSize: "0.85rem", textTransform: "uppercase", letterSpacing: "1px", color: "var(--text-muted)" }}>Tasks</div>
           </div>
-          <div className="glass-card text-center" style={{ padding: "1.5rem", minWidth: "150px" }}>
+          <div className="glass-card text-center mobile-carousel-item-mini" style={{ padding: "1.5rem", minWidth: "150px" }}>
             <div style={{ fontSize: "2.5rem", fontFamily: "Playfair Display", color: "var(--secondary)" }}>{applicationCount}</div>
             <div style={{ fontSize: "0.85rem", textTransform: "uppercase", letterSpacing: "1px", color: "var(--text-muted)" }}>Applications</div>
           </div>
-          <div className="glass-card text-center" style={{ padding: "1.5rem", minWidth: "150px" }}>
+          <div className="glass-card text-center mobile-carousel-item-mini" style={{ padding: "1.5rem", minWidth: "150px" }}>
             <div style={{ fontSize: "2.5rem", fontFamily: "Playfair Display", color: "#10b981" }}>{invitationCount}</div>
             <div style={{ fontSize: "0.85rem", textTransform: "uppercase", letterSpacing: "1px", color: "var(--text-muted)" }}>Invitations</div>
           </div>
-          <div className="glass-card text-center" style={{ padding: "1.5rem", minWidth: "150px" }}>
+          <div className="glass-card text-center mobile-carousel-item-mini" style={{ padding: "1.5rem", minWidth: "150px" }}>
             <div style={{ fontSize: "2.5rem", fontFamily: "Playfair Display", color: "#f59e0b" }}>{matchScoreCount}</div>
             <div style={{ fontSize: "0.85rem", textTransform: "uppercase", letterSpacing: "1px", color: "var(--text-muted)" }}>Matches Computed</div>
           </div>
@@ -47,10 +47,10 @@ export default async function DemonstrationPage() {
       </div>
 
       {/* Demonstration Flows */}
-      <div className="flex gap-8 flex-wrap justify-center animate-fade-up delay-1">
+      <div className="flex gap-8 flex-wrap justify-center animate-fade-up delay-1 mobile-carousel">
         
         {/* Client Flow */}
-        <div className="glass-card flex flex-col justify-between" style={{ flex: "1 1 350px", maxWidth: "500px", borderTop: "4px solid var(--primary)" }}>
+        <div className="glass-card flex flex-col justify-between mobile-carousel-item" style={{ flex: "1 1 350px", maxWidth: "500px", borderTop: "4px solid var(--primary)" }}>
           <div>
             <h2 style={{ fontSize: "1.8rem", marginBottom: "1rem" }}>Simulate Client</h2>
             <p style={{ color: "var(--text-muted)", marginBottom: "1.5rem" }}>
@@ -68,7 +68,7 @@ export default async function DemonstrationPage() {
         </div>
 
         {/* Freelancer Flow */}
-        <div className="glass-card flex flex-col justify-between" style={{ flex: "1 1 350px", maxWidth: "500px", borderTop: "4px solid var(--accent)" }}>
+        <div className="glass-card flex flex-col justify-between mobile-carousel-item" style={{ flex: "1 1 350px", maxWidth: "500px", borderTop: "4px solid var(--accent)" }}>
           <div>
             <h2 style={{ fontSize: "1.8rem", marginBottom: "1rem" }}>Simulate Freelancer</h2>
             <p style={{ color: "var(--text-muted)", marginBottom: "1.5rem" }}>

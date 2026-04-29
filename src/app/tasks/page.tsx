@@ -29,9 +29,9 @@ export default async function BrowseTasksPage({
   return (
     <div className="container" style={{ marginTop: "3rem", marginBottom: "5rem" }}>
       <section className="animate-fade-scale mb-8">
-        <div className="flex justify-between align-center mb-6">
+        <div className="flex justify-between align-center mb-6 flex-wrap gap-4">
           <h1 style={{ fontSize: "2.5rem", margin: 0 }}>Available Tasks</h1>
-          <Link href="/client/dashboard" className="btn btn-primary">Post a Task</Link>
+          <Link href="/client/dashboard" className="btn btn-primary" style={{ width: "auto", minWidth: "150px", textAlign: "center" }}>Post a Task</Link>
         </div>
         <p style={{ fontSize: "1.1rem", color: "var(--text-muted)", marginBottom: "2rem" }}>
           Browse open projects and apply to those that match your skill set.
