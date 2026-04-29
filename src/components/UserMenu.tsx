@@ -47,7 +47,10 @@ export default function UserMenu() {
             zIndex: 1000,
             display: "flex",
             flexDirection: "column",
-            gap: "1rem"
+            gap: "1rem",
+            background: "var(--bg-secondary)",
+            backdropFilter: "none",
+            WebkitBackdropFilter: "none"
           }}
         >
           <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", borderBottom: "1px solid var(--border)", paddingBottom: "0.75rem" }}>
