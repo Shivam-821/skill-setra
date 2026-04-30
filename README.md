@@ -1,36 +1,71 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# SkillSetra: A Sophisticated DBMS-Powered Freelance Marketplace
+
+SkillSetra is a comprehensive freelance marketplace platform designed to optimize project posting, freelancer discovery, and hiring workflows. Built as a Database Management Systems (DBMS) project prototype, the application utilizes a highly normalized relational schema and an intelligent matching engine to bridge the gap between complex project requirements and professional expertise.
+
+## Project Overview
+
+The primary objective of SkillSetra is to demonstrate the power of relational database modeling in solving real-world marketplace challenges. The platform features separate specialized dashboards for clients and freelancers, integrated with a central matching algorithm that calculates compatibility scores based on proficiency vectors, experience years, and skill requirements.
+
+### Key Functional Areas
+- **Algorithmic Matching Engine**: Dynamic relational queries that calculate 0-100 compatibility scores.
+- **Client Management**: Tools for project specification, budget management, and candidate invitation.
+- **Freelancer Profiles**: Comprehensive skill matrices, verifiable portfolios, and bio management.
+- **Relational Integrity**: Fully normalized schema (3NF/BCNF principles) ensuring data consistency and optimized performance.
+
+## Technical Stack
+
+The application is built using a modern, high-performance web architecture:
+
+- **Frontend Framework**: [Next.js 16 (Turbopack)](https://nextjs.org/)
+- **Programming Language**: [TypeScript](https://www.typescriptlang.org/)
+- **ORM & Schema Management**: [Prisma](https://www.prisma.io/)
+- **Database**: [PostgreSQL (via Neon)](https://neon.tech/)
+- **Styling**: Vanilla CSS (Custom Glassmorphism Design System)
+- **State Management**: React Hooks (State, Effect, Memo)
+
+## Project Structure
+
+The codebase follows a modular architecture for scalability and maintainability:
+
+```text
+├── prisma/                 # Database schema and migration files
+│   ├── schema.prisma       # Primary relational model definitions
+│   └── seed.ts             # Database seeding scripts for development
+├── src/
+│   ├── app/                # Next.js App Router (Pages and API Routes)
+│   │   ├── client/         # Client-side specialized dashboards
+│   │   ├── freelancer/     # Freelancer-side specialized dashboards
+│   │   ├── tasks/          # Public project discovery directory
+│   │   └── freelancers/    # Public professional directory
+│   ├── components/         # Reusable UI components (Navbar, Footer, Menu)
+│   └── lib/                # Shared utilities and database singletons
+├── public/                 # Static assets and media files
+└── .env                    # Environment configuration (Database URL)
+```
+
+## Development Team
+
+This project was designed and developed as part of the Database Management Systems curriculum at the **National Institute of Technology (NIT) Manipur**.
+
+**Core Developers:**
+- **Shivam Raj**
+- **Divyam Kumar Choubey**
+- **Abhinav Patra**
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+- Node.js (v18 or higher)
+- npm or yarn
+- A PostgreSQL database instance (Neon recommended)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Installation
+1. Clone the repository
+2. Install dependencies: `npm install`
+3. Configure environment variables in `.env` (DATABASE_URL)
+4. Synchronize database schema: `npx prisma db push`
+5. Seed development data: `npx prisma db seed`
+6. Start the development server: `npm run dev`
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+*SkillSetra Platform Prototype | National Institute of Technology Manipur*
