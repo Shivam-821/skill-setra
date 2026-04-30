@@ -27,7 +27,7 @@ export default function Footer() {
   return (
     <footer style={{ 
       marginTop: '6rem',
-      padding: '5rem 0 4rem 0',
+      padding: '5rem 0 1rem 0',
       borderTop: '1px solid var(--border)',
       background: 'var(--nav-bg)',
       backdropFilter: 'blur(16px)',
