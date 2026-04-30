@@ -608,6 +608,47 @@ select.form-control option {
   }
 }
 
+/* Footer Specific Responsive Fixes */
+.footer-main {
+  margin-top: 4rem;
+  padding: 3rem 0 2rem 0;
+  border-top: 1px solid var(--border);
+  background: var(--nav-bg);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  position: relative;
+  overflow: hidden;
+}
+
+.footer-item-left {
+  flex: 1 1 450px;
+}
+
+.footer-item-right {
+  flex: 0 1 350px;
+}
+
+@media (max-width: 768px) {
+  .footer-main {
+    margin-top: 2rem !important;
+    padding: 2.5rem 0 1.5rem 0 !important;
+  }
+  
+  .footer-item-left, .footer-item-right {
+    flex: 1 1 auto !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .footer-main p {
+    margin-bottom: 1.5rem !important;
+  }
+
+  .mobile-reverse {
+    gap: 1.5rem !important;
+  }
+}
+
 html, body {
   overflow-x: hidden;
   max-width: 100vw;
