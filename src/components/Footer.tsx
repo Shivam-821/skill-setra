@@ -78,7 +78,7 @@ export default function Footer() {
 
           {/* Right Side: Team & College */}
           <div style={{ flex: '0 1 350px' }}>
-            <div className="glass-card" style={{ padding: '2rem', background: 'rgba(255,255,255,0.01)', border: '1px solid var(--border)' }}>
+            <div className="glass-card" style={{ padding: '2rem', margin: '3rem', background: 'rgba(255,255,255,0.01)', border: '1px solid var(--border)' }}>
               <h3 style={{ 
                 fontSize: '0.9rem', 
                 textTransform: 'uppercase', 
