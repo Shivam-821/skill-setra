@@ -59,7 +59,7 @@ export default function AboutPage() {
               <span className="badge">Next.js 15 (App Router)</span>
               <span className="badge">React Server Components</span>
               <span className="badge">Prisma ORM</span>
-              <span className="badge">SQLite RDBMS</span>
+              <span className="badge">PostgreSQL</span>
               <span className="badge">TypeScript</span>
               <span className="badge">Vanilla CSS</span>
             </div>
