@@ -38,7 +38,7 @@ export default function Footer() {
       {/* Decorative background element */}
       <div style={{
         position: 'absolute',
-        bottom: '-100px',
+        bottom: '-50px',
         right: '-100px',
         width: '300px',
         height: '300px',
