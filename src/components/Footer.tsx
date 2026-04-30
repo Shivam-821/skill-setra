@@ -61,7 +61,6 @@ export default function Footer() {
               color: 'var(--text-muted)', 
               lineHeight: '1.8', 
               maxWidth: '480px',
-              marginBottom: '2rem'
             }}>
               A sophisticated DBMS-powered freelance marketplace designed to bridge the gap between talented professionals and complex project requirements through an intelligent relational matching engine. Built with a focus on normalization, performance, and user experience.
             </p>
