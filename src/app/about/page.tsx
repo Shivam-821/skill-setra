@@ -56,7 +56,7 @@ export default function AboutPage() {
          <div className="glass-card" style={{ textAlign: "center", padding: "3rem" }}>
             <h3 style={{ fontSize: "1.8rem", marginBottom: "1rem" }}>Technical Stack</h3>
             <div className="flex justify-center gap-4 flex-wrap mt-4">
-              <span className="badge">Next.js 15 (App Router)</span>
+              <span className="badge">Next.js 16 (App Router)</span>
               <span className="badge">React Server Components</span>
               <span className="badge">Prisma ORM</span>
               <span className="badge">PostgreSQL</span>
